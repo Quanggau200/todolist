@@ -36,6 +36,15 @@ validate.isrequired = function (selector) {
     };
 };
 
+validate(
+    {
+        form:'#form',
+        rules:[
+        validate.isrequired("#taskid")
+       ]
+    }
+)
+
 // thêm
 function showdata()
 {
@@ -77,7 +86,7 @@ function addtask() {
         tasklist = JSON.parse(localStorage.getItem("tasklist"));
     }
     var exists = tasklist.some(function (item) {
-        return item.taskvalue === inputvalue;
+        return item.taskvalue.toLowerCase()=== inputvalue.toLowerCase();
     });
 
     if (exists) {
@@ -94,11 +103,7 @@ function addtask() {
     disabledbtn.disabled = true;
 }
 
-validate(
-    {
-        form:'#form',
-        rules:[
-        validate.isrequired("#taskid")
-       ]
-    }
-)
+
+// Xóa
+
+
