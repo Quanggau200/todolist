@@ -1,0 +1,56 @@
+.title
+{
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 40px;
+}
+
+
+
+.btn-save
+{
+    text-align: center;
+    padding-top: 10px;
+}
+small{
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+  .data-table {
+    
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    vertical-align: middle;
+    
+  }
+  .data-table tr
+  {
+    text-align: center;
+  }
+  .action
+  {
+    width: 40%;
+  }
+
+.btn
+{
+    margin-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.btn-edit
+{
+    color: white;
+    background-color: rgb(135, 179, 110) !important;
+}
